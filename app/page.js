@@ -1,13 +1,14 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Header from "./_components/Header";
+import Hero from "./_components/Hero";
 
 const page = () => {
   return (
     <div>
-      <h2>
-        <Button>Sanglap Chaman</Button>
-      </h2>
+      <Header />
+      <Hero />
     </div>
   );
 };
