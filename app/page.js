@@ -1,13 +1,15 @@
+import React from "react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
-
-export default function Home() {
+const page = () => {
   return (
     <div>
       <h2>
-        <Button>Button</Button>
+        <Button>Sanglap Chaman</Button>
       </h2>
     </div>
   );
-}
+};
+
+export default page;
