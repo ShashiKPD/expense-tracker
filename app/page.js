@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <h2>
-        <Button>Button</Button>
+        <Button>Button Sanglap</Button>
       </h2>
     </div>
   );
