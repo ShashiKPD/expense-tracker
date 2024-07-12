@@ -1,4 +1,8 @@
+
+import { ClerkProvider } from "@clerk/nextjs";
+
 import { Inter, Outfit } from "next/font/google";
+
 import "./globals.css";
 
 const Outfit = Outfit({ subsets: ["latin"] });
@@ -10,8 +14,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+
+    <ClerkProvider>
+      <html lang="en">
+        <body className={inter.className}>{children}</body>
+      </html>
+    </ClerkProvider>
+
     <html lang="en">
       <body className={Outfit.className}>{children}</body>
     </html>
+
   );
 }
